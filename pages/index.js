@@ -12,6 +12,7 @@ export default function Auth() {
     const form = evt.target;
     setTimeout(() => {
       if (form.login.value === 'myLogin' && form.password.value === 'myPassw0rd') {
+        localStorage.setItem('isLoggedIn', true)
         router.push('/all-video')
       } else {
         setErr(true)

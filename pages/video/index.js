@@ -17,6 +17,13 @@ export default function Video() {
   const [comments, setComments] = useState([]);
 
   useEffect(() => {
+    const isLoggedIn =  localStorage.getItem('isLoggedIn');
+    if (!isLoggedIn) {
+      router.push('/')
+    }
+  }, []);
+
+  useEffect(() => {
     const video = videosData.find((item) => {
       return item.id === videoId
     });

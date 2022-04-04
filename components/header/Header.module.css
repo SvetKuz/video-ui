@@ -29,6 +29,7 @@
   font-size: 20px;
   font-weight: 900;
   color: cornflowerblue;
+  cursor: pointer;
 }
 
 .exit {

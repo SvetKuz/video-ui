@@ -1,0 +1,63 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: lightgray;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  max-width: 450px;
+  width: 100%;
+  flex-direction: row;
+  background-color: rgb(134, 134, 134);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.formColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 15px;
+}
+
+.rowInput {
+  margin: 10px 0;
+}
+
+.rowInput input {
+  font-size: 20px;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+  border-color: white;
+}
+
+.rowButton {
+  margin: 5px 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.rowButton button {
+  border: none;
+  border-radius: 5px;
+  background-color: cornflowerblue;
+  font-size: 20px;
+  color: white;
+  padding: 10px 30px;
+}
+
+.errorMessage {
+  font-size: 20px;
+  color: red;
+  padding: 5px;
+}

@@ -1,0 +1,44 @@
+.videoWrapper {
+  width: 100%;
+  max-width: 450px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  height: auto;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.videoWrapper img {
+  height: auto;
+  width: 100%;
+  display: flex;
+  background-color: transparent;
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+
+.videoWrapper b,
+.videoWrapper p {
+  margin: 0;
+  padding: 5px;
+}
+
+@media (min-width: 600px) {
+  .videoWrapper {
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 900px) {
+  .videoWrapper {
+    flex-basis: 33.3333%;
+  }
+}
+
+@media (min-width: 1320px) {
+  .videoWrapper {
+    flex-basis: 25%;
+  }
+}

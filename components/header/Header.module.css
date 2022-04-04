@@ -1,0 +1,50 @@
+.headerWrapper {
+  width: 100%;
+  display: flex;
+}
+
+.rowHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.arrow {
+  display: flex;
+  width: 5%;
+  justify-content: center;
+  padding: 10px;
+  font-size: 40px;
+  color: black;
+  cursor: pointer;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 900;
+  color: cornflowerblue;
+}
+
+.exit {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  .arrow {
+    font-size: 70px;
+  }
+  .logo {
+    font-size: 45px;
+  }
+}

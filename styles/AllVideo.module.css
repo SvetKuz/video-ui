@@ -1,0 +1,39 @@
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.colContainer {
+  width: 100%;
+  max-width: 1800px;
+  padding: 0 10px;
+  background-color: lightgrey;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.videosRow {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (min-width: 600px) {
+  .colContainer {
+    padding: 0 20px;
+  }
+  .videosRow {
+    justify-content: start;
+  }
+}
+
+@media (min-width: 1320px) {
+  .colContainer {
+    padding: 0 60px;
+  }
+}

@@ -1,0 +1,148 @@
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.colContainer {
+  width: 100%;
+  max-width: 1800px;
+  padding: 0 10px;
+  background-color: lightgrey;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.rowWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.videosWrapper {
+  display: none;
+  width: 25%;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.videosWrapperMobile {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (min-width: 1100px) {
+  .videosWrapper {
+    display: flex;
+  }
+
+  .videosWrapperMobile {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  .colContainer {
+    padding: 0 20px;
+  }
+
+  .videosWrapperMobile {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1320px) {
+  .colContainer {
+    padding: 0 60px;
+  }
+}
+
+.videoWrapper {
+  padding: 5px;
+}
+
+.videoTitle {
+  padding: 5px;
+}
+
+.videoTitle p {
+  padding-bottom: 5px;
+}
+
+.videoWrapper video {
+  width: 100%;
+  display: flex;
+}
+
+.commentsWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.commentsTitle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.commentButtom {
+  display: flex;
+  color: cornflowerblue;
+  font-size: 20px;
+  font-weight: 500;
+  padding-right: 10px;
+}
+
+.colCommentsContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.commentsSectionWrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.addComment {
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+}
+
+.inputWrapper {
+  padding: 5px;
+  flex-grow: 1;
+}
+
+.inputWrapper input {
+  font-size: 20px;
+  width: 98%;
+  padding: 5px;
+  outline: none;
+  border-radius: 5px;
+  border-color: transparent;
+}
+
+.buttonWrapper button {
+  border: none;
+  border-radius: 5px;
+  background-color: cornflowerblue;
+  font-size: 20px;
+  color: white;
+  padding: 7px 30px;
+}
